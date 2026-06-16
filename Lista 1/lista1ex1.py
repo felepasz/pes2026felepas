@@ -8,4 +8,4 @@ if compra>=100 :
      print("Voce ganhou um cupom de desconto")
 
 else :
-     print("Continue comprando para ganhar cupom de desconto")
+     print("Continue comprando para ganhar cupom de desconto")   
