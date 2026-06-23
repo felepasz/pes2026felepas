@@ -9,3 +9,4 @@ if compra>=100 :
 
 else :
      print("Continue comprando para ganhar cupom de desconto")   
+
