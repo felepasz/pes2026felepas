@@ -13,8 +13,11 @@
 #um espaço vago na lista.
 
 placas = [0] * 15
+contplacas = 0
 x = 0
 i = 0
+p = 0
+codigoexcluido = 0
 
 while True:
     print ("Menu:")
@@ -26,6 +29,8 @@ while True:
 
     opcao = int(input("selecione uma opção: "))
 
-    if opcao == 1:
+    if opcao == 0:
         break
-    elif
+    elif opcao == 1:
+        if contplacas <= 14:
+            
