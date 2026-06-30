@@ -12,25 +12,62 @@
 #simplesmente listar todas as placas cadastradas. Dica: utilize um valor padrão para definir
 #um espaço vago na lista.
 
-placas = [0] * 15
-contplacas = 0
-x = 0
-i = 0
-p = 0
-codigoexcluido = 0
+placas = ["VAGO"] * 15
 
 while True:
-    print ("Menu:")
-    print ("----")
-    print ("1 – Cadastrar")
-    print ("2 – Excluir")
-    print ("3 - Listar")
-    print ("0 – Sair ")
+    print("\n1 - Cadastrar")
+    print("2 - Excluir")
+    print("3 - Listar")
+    print("0 - Sair")
 
-    opcao = int(input("selecione uma opção: "))
+    opcao = input("Escolha uma opção: ")
 
-    if opcao == 0:
+    if opcao == "1":
+        placa = input("Digite a placa: ")
+
+        encontrou_vaga = False
+
+        for i in range(15):
+            if placas[i] == "VAGO":
+                placas[i] = placa
+                encontrou_vaga = True
+                print("Placa cadastrada com sucesso!")
+                break
+
+        if encontrou_vaga == False:
+            print("Não há espaço disponível.")
+
+    elif opcao == "2":
+        placa = input("Digite a placa a excluir: ")
+
+        encontrou = False
+
+        for i in range(15):
+            if placas[i] == placa:
+                placas[i] = "VAGO"
+                encontrou = True
+                print("Placa excluída com sucesso!")
+                break
+
+        if encontrou == False:
+            print("Falha: placa não encontrada.")
+
+    elif opcao == "3":
+        print("\nPlacas cadastradas:")
+
+        vazio = True
+
+        for i in range(15):
+            if placas[i] != "VAGO":
+                print(placas[i])
+                vazio = False
+
+        if vazio == True:
+            print("Nenhuma placa cadastrada.")
+
+    elif opcao == "0":
+        print("Programa encerrado.")
         break
-    elif opcao == 1:
-        if contplacas <= 14:
-            
+
+    else:
+        print("Opção inválida.")
