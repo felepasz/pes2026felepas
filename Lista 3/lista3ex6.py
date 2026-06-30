@@ -155,7 +155,3 @@ while True:
             print("Excluído pelo código")
         else:
             print("Esse código já está vazio")
-       else:
-         print("Código inválido") 
-         
-#xxxx
