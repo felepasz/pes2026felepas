@@ -4,12 +4,12 @@
 
 notas = []
 
-notasdig = int(input("Digite o numero de notas a serem digitadas: "))
+notasdig = int(input("digite o numero de notas a serem digitadas: "))
 
 x = 0
 
 while x<notasdig:
-    notas.append (input("Digite a nota: "))
+    notas.append (input("digite a nota: "))
     x = x + 1
 
 while x<notasdig:
