@@ -73,13 +73,13 @@ while True:
         if len(notas) == 0:
             print("Erro: não há notas cadastradas")
         else:
-            print("Maior nota:", max(notas))
+            print("Maior nota:", sorted(notas, reverse=True))
 
     elif opcao == 6:
         if len(notas) == 0:
             print("Erro: não há notas cadastradas")
         else:
-            print("Menor nota:", min(notas))
+            print("Menor nota:", sorted(notas))
 
     else:
         print("Opção inválida!")
