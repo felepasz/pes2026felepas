@@ -2,12 +2,16 @@
 que um jovem passou jogando videogame e retorne o total de minutos jogados. Peça ao
 usuário para inserir as horas e minutos, e exiba o tempo total em minutos.'''
 
-def tempo_total(h, m):
-    i = h*60
-    r = i + m 
-    return r
+def tempo_total(horas, minutos):
+    total = horas * 60 + minutos
+    return total
 
-horas = int(input("Digite o numero de horas que você jogou: "))
-minutos = int(input("Digite a quantidade de minutos também: "))
+
+horas = int(input("Digite a quantidade de horas: "))
+minutos = int(input("Digite a quantidade de minutos: "))
+
+resultado = tempo_total(horas, minutos)
+
+print("Tempo total jogado:", resultado, "minutos")
 
 
