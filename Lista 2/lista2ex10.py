@@ -13,4 +13,4 @@ while num!=0:
      i = i + 1 
 media = somanum/i
 
-print(f"o total de numeros digitados foi {i}, a soma deles foi {somanum}, e a aritimetica deles doi {media}")
+print(f"o total de numeros digitados foi {i}, a soma deles foi {somanum}, e a aritimetica deles foi {media}")

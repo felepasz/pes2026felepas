@@ -35,8 +35,11 @@ while True:
         pessoas.append(Pessoa(nome, idade, altura, peso))
 
     elif opcao == 2:
-        for i in pessoas:
-            print(i.exibir())
+        if len(pessoas) == 0:
+            print("Sem nomes para exibir.")
+        else:
+            for i in pessoas:
+                print(i.exibir())
 
     elif opcao == 3:
         if len(pessoas) == 0:
@@ -52,7 +55,23 @@ while True:
                 continue
 
     elif opcao == 4:
-        break #dps continuo
+
+        if len(pessoas) == 0:
+            print("Não tem pessoas cadastradas.")
+            continue
+
+        nome = input("Digite o nome da pessoa para atualizar: ")
+
+        for i in pessoas:
+            if i.nome == nome:
+                i.idade = int(input("Digite a nova idade: "))
+                i.altura = float(input("Digite a nova altura: "))
+                i.peso = float(input("Digite o novo peso: "))
+
+                print("Cadastro atualizado!")
+                break
+        else:
+            print("Nome não encontrado.")
 
     elif opcao == 0:
         break
