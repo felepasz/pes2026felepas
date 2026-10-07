@@ -15,7 +15,7 @@ class Pessoa:
         self.peso = peso
 
     def exibir(self):
-        print(f"{self.nome}, {self.idade} anos, {self.altura}m, {self.peso}kg")
+        return(f"{self.nome}, {self.idade} anos, {self.altura}m, {self.peso}kg")
 
     def imc(self):
         return self.peso / (self.altura * self.altura)
