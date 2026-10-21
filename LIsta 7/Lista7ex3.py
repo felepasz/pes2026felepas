@@ -67,20 +67,22 @@ while True:
         carro = Carro(placa, modelo)
 
         if vaga.ocupar_vaga(carro):
-            print("Carro estacionado com sucesso!")
+            print("Carro estacionado com sucesso")
         else:
-            print("A vaga já está ocupada!")
+            print("A vaga já está ocupada")
 
     elif opcao == "3":
         if vaga.carro_estacionado is None:
             print("A vaga já está livre.")
         else:
             vaga.liberar_vaga()
-            print("Vaga liberada com sucesso!")
+            print("Vaga liberada com sucesso")
 
     elif opcao == "0":
-        print("Programa encerrado!")
+        print("Programa encerrado")
         break
 
     else:
-        print("Opção inválida!")
+        print("Opção inválida")
+
+        #diagrama nos arquivos enviados
