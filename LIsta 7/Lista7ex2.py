@@ -27,9 +27,14 @@ class Computador:
         self.cpu = CPU(fabricante, modelo)
 
     def __repr__(self):
-        return f"Computador: {self.tipo} | {self.cpu}"
+        return f"Computador: {self.tipo}\n{self.cpu}"
 
-computador1 = Computador("Desktop", "Intel", "i7-12700K")
 
-print(computador1)
+tipo = input("Digite o tipo do computador (Desktop ou Notebook): ")
+fabricante = input("Digite o fabricante da CPU: ")
+modelo = input("Digite o modelo da CPU: ")
 
+computador = Computador(tipo, fabricante, modelo)
+
+print("\n--- Dados do computador ---")
+print(computador)
